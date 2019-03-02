@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
@@ -29,12 +31,45 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScHackathon.2019.Project", "src\Project\SitecoreVolt\code\ScHackathon.2019.Project.csproj", "{F3178044-C284-4238-8EB1-3C6312671609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{5D5A473B-BE2E-4E9C-9E78-DF83E34536C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Serialization", "src\Foundation\Serialization\code\Sitecore.Foundation.Serialization.csproj", "{007CD5DC-0030-460D-91A3-3DDEA9AB472F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "SitecoreExtensions", "{0D26D008-41CE-4BD2-87BA-754A9AC49EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj", "{F1DBC58D-231A-4304-BDDF-DB58CD6006F6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3178044-C284-4238-8EB1-3C6312671609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3178044-C284-4238-8EB1-3C6312671609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3178044-C284-4238-8EB1-3C6312671609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3178044-C284-4238-8EB1-3C6312671609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DBC58D-231A-4304-BDDF-DB58CD6006F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DBC58D-231A-4304-BDDF-DB58CD6006F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DBC58D-231A-4304-BDDF-DB58CD6006F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DBC58D-231A-4304-BDDF-DB58CD6006F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
+		{F3178044-C284-4238-8EB1-3C6312671609} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{5D5A473B-BE2E-4E9C-9E78-DF83E34536C2} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{007CD5DC-0030-460D-91A3-3DDEA9AB472F} = {5D5A473B-BE2E-4E9C-9E78-DF83E34536C2}
+		{0D26D008-41CE-4BD2-87BA-754A9AC49EE3} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{F1DBC58D-231A-4304-BDDF-DB58CD6006F6} = {0D26D008-41CE-4BD2-87BA-754A9AC49EE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
